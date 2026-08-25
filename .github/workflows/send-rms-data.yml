@@ -1,1 +1,42 @@
+name: Send RMS Data
 
+on:
+  # Runs automatically on a schedule (cron times are UTC).
+  # IST is UTC+5:30, so 1:00-12:30 UTC = 6:30 AM-6:00 PM IST,
+  # every 30 minutes. Adjust here if you need a different window.
+  schedule:
+    - cron: "0,30 1-12 * * *"
+
+  # Lets you trigger a run manually from the Actions tab, useful for testing.
+  workflow_dispatch:
+
+jobs:
+  send-data:
+    runs-on: ubuntu-latest
+
+    # Needed so this job can commit the new log files back to the repo.
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run sender
+        run: python send_rms_data.py
+
+      - name: Commit and push logs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A logs/
+          git diff --staged --quiet || git commit -m "Update RMS send logs $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
