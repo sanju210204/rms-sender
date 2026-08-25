@@ -23,7 +23,7 @@ jobs:
         run: pip install requests
 
       - name: Run sender
-        run: python send_rms_data.py
+        run: python -u send_rms_data.py
 
       - name: Commit and push logs
         run: |
