@@ -18,8 +18,8 @@ URL = "https://gis.jharkhand.gov.in/ejalportal/RMS_DATA.asmx/Get_RMS_DATA_NEW"
 # ============================================================
 # RETRY + THREAD CONFIG
 # ============================================================
-MAX_RETRIES = 15
-REQUEST_TIMEOUT = 120
+MAX_RETRIES = 3
+REQUEST_TIMEOUT = 30
 DELAY_BETWEEN_ROUNDS = 10
 MAX_THREADS = 20
 
