@@ -1,0 +1,20 @@
+[
+  {
+        "District": "HAZARIBAG",
+        "Division": "HAZARIBAGH",
+        "Block": "ICHAK",
+        "Panchayet": "DADI GHAGHAR",
+        "Village": "GARDIH",
+        "Habitation": "CHAKERWA",
+        "IMIS_Scheme_ID": 30129503,
+        "Scheme_Name": "CLUSTER-08BA, DARIGHAGHAR,GARDIH,DHARDHARWA/CHEKARWA,SVS",
+        "VendorId": "MEC17",
+        "DeviceType": 2,
+        "DeviceName": "1 HP",
+        "DeviceId": "MC60-HVC-4904",
+        "TimeZone": 6,
+        "Latitude": 24.130298,
+        "Longitude": 85.489995,
+        "SoftwareVer": 1
+    }
+]
