@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import random
 import json
 import time as t
@@ -7,6 +7,18 @@ import os
 import glob
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+
+# ============================================================
+# TIMEZONE
+# ============================================================
+# The government portal expects Date/Time in IST (India Standard
+# Time), regardless of what timezone the machine running this
+# script is actually in. Locally (India) this makes no visible
+# difference, but on GitHub Actions -- whose servers run in UTC --
+# datetime.now() would otherwise be off by 5 hours 30 minutes,
+# which is enough to get the reading rejected as "not today's data".
+IST = timezone(timedelta(hours=5, minutes=30))
 
 
 # ============================================================
@@ -18,8 +30,8 @@ URL = "https://gis.jharkhand.gov.in/ejalportal/RMS_DATA.asmx/Get_RMS_DATA_NEW"
 # ============================================================
 # RETRY + THREAD CONFIG
 # ============================================================
-MAX_RETRIES = 3
-REQUEST_TIMEOUT = 30
+MAX_RETRIES = 15
+REQUEST_TIMEOUT = 120
 DELAY_BETWEEN_ROUNDS = 10
 MAX_THREADS = 20
 
@@ -37,7 +49,7 @@ os.makedirs("logs", exist_ok=True)
 # DYNAMIC DATA GENERATOR
 # ============================================================
 def generate_dynamic_data():
-    now = datetime.now()
+    now = datetime.now(IST)
     return {
         "Date": now.strftime("%Y-%m-%d"),
         "Time": now.strftime("%H:%M:%S"),
@@ -117,7 +129,7 @@ def send_data_with_retries():
                     "IMIS_Scheme_ID": result["IMIS_Scheme_ID"],
                     "DeviceId": result["DeviceId"],
                     "Response": result["response"],
-                    "Timestamp": datetime.now().isoformat()
+                    "Timestamp": datetime.now(IST).isoformat()
                 }
 
                 if result["success"]:
@@ -142,7 +154,7 @@ def send_data_with_retries():
 # SAVE LOGS
 # ============================================================
 def save_logs(success, fail):
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    timestamp = datetime.now(IST).strftime("%Y-%m-%d_%H-%M-%S")
     success_file = f"logs/success_{timestamp}.json"
     fail_file = f"logs/fail_{timestamp}.json"
 
@@ -166,7 +178,9 @@ def save_logs(success, fail):
 LOG_RETENTION_DAYS = 3
 
 def cleanup_old_logs():
-    cutoff = datetime.now() - timedelta(days=LOG_RETENTION_DAYS)
+    # Compared against naive datetimes parsed from filenames, so this
+    # is also kept naive (but still correctly in IST, not UTC).
+    cutoff = datetime.now(IST).replace(tzinfo=None) - timedelta(days=LOG_RETENTION_DAYS)
     deleted = 0
 
     for pattern in ("logs/success_*.json", "logs/fail_*.json"):
