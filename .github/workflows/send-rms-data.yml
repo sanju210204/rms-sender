@@ -1,8 +1,13 @@
 name: Send RMS Data
 
 on:
-  # schedule:
-  #   - cron: "0,30 1-12 * * *"
+  # Runs automatically on a schedule (cron times are UTC).
+  # IST is UTC+5:30, so 1:00-12:30 UTC = 6:30 AM-6:00 PM IST,
+  # every 30 minutes.
+  schedule:
+    - cron: "0,30 1-12 * * *"
+
+  # Lets you trigger a run manually from the Actions tab, useful for testing.
   workflow_dispatch:
 
 jobs:
