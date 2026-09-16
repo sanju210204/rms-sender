@@ -1,0 +1,92 @@
+[
+    {
+        "IMIS_Scheme_ID": 30132315,
+        "DeviceId": "MC60-HVC-4897",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:22.979156+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132287,
+        "DeviceId": "MC60-HVC-4909",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.228579+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132219,
+        "DeviceId": "MC60-HVC-9880",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.228631+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30131226,
+        "DeviceId": "MC60-HVC-4929",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.228640+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129766,
+        "DeviceId": "MC60-HVC-4951",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.234414+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132284,
+        "DeviceId": "MC60-HVC-4928",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.234463+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129503,
+        "DeviceId": "MC60-HVC-4904",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.238031+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132326,
+        "DeviceId": "MC60-HVC-4898",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.258110+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129465,
+        "DeviceId": "MC60-HVC-4899",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.258139+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132196,
+        "DeviceId": "MC60-HVC-4912",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.258306+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129499,
+        "DeviceId": "MC60-HVC-4922",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.293481+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129766,
+        "DeviceId": "MC60-HVC-4881",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.293783+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30131122,
+        "DeviceId": "MC60-HVC-4893",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.293870+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132336,
+        "DeviceId": "MC60-HVC-4051",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.344863+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132151,
+        "DeviceId": "MC60-HVC-4941",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-16T09:09:23.350696+05:30"
+    }
+]
