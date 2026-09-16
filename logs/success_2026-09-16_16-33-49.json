@@ -1,0 +1,92 @@
+[
+    {
+        "IMIS_Scheme_ID": 30131122,
+        "DeviceId": "MC60-HVC-4893",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.836565+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132287,
+        "DeviceId": "MC60-HVC-4909",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.875205+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129766,
+        "DeviceId": "MC60-HVC-4881",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.875244+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30131226,
+        "DeviceId": "MC60-HVC-4929",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.884066+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132315,
+        "DeviceId": "MC60-HVC-4897",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.893532+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129499,
+        "DeviceId": "MC60-HVC-4922",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.896662+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129465,
+        "DeviceId": "MC60-HVC-4899",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.920941+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132336,
+        "DeviceId": "MC60-HVC-4051",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.931126+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132151,
+        "DeviceId": "MC60-HVC-4941",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.933236+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132196,
+        "DeviceId": "MC60-HVC-4912",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:47.934792+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129766,
+        "DeviceId": "MC60-HVC-4951",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:49.285537+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132219,
+        "DeviceId": "MC60-HVC-9880",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:49.339736+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30129503,
+        "DeviceId": "MC60-HVC-4904",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:49.418219+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132284,
+        "DeviceId": "MC60-HVC-4928",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:49.443590+05:30"
+    },
+    {
+        "IMIS_Scheme_ID": 30132326,
+        "DeviceId": "MC60-HVC-4898",
+        "Response": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<string xmlns=\"http://tempuri.org/\">Success</string>",
+        "Timestamp": "2026-09-16T16:33:49.617355+05:30"
+    }
+]
