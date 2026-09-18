@@ -1,0 +1,8 @@
+[
+    {
+        "IMIS_Scheme_ID": 30132287,
+        "DeviceId": "MC60-HVC-4909",
+        "Response": "ERROR: HTTPSConnectionPool(host='gis.jharkhand.gov.in', port=443): Read timed out. (read timeout=120)",
+        "Timestamp": "2026-09-18T11:36:33.834758+05:30"
+    }
+]
